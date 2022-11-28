@@ -1,0 +1,11 @@
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.pokemon-input {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
