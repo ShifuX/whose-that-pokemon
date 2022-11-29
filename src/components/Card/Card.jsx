@@ -1,11 +1,21 @@
+import { useRef } from "react";
 import "./Card.css";
 
-const card = () => {
+const Card = ({ pokeImg, isCorrect }) => {
+  const imgP = useRef();
+ if (!isCorrect && pokeImg) {
+    imgP.current.filter = "brightness()";
+ }
   return (
-    <div className='card'>
-        <img className="pokemon-img" src='https://static.wikia.nocookie.net/monster/images/9/95/Charizard.png' alt='Pokemon'/>
+    <div>
+      <div className="card-container">
+        <div className='card'>
+          <img ref={imgP} className="pokemon-img" src={pokeImg} alt='Pokemon'/>
+        </div>
+      </div>
+      
     </div>
   )
 }
 
-export default card
+export default Card
