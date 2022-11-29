@@ -3,5 +3,16 @@
     height: 2.3rem;
     width: 6rem;
     background-color: #ffcb05;
-    border-style: none;
+    border:0.20em solid rgba(255,255,255,0);
+    transition: 0.5s;
+}
+
+.bttn:hover {
+    border-color: #3c5aa6;
+}
+
+.bttn-row {
+    flex-direction: row;
+    margin-left: 20;
+    justify-content: space-evenly;
 }

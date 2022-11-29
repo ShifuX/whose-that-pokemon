@@ -14,6 +14,14 @@
     font-size: 25px;
 }
 
+.pokemon-input-wrong {
+   color: red;
+}
+
+.pokemon-input-correct {
+    color: green;
+ }
+
 .lbl {
     font-size: 25px;
 }

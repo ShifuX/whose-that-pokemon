@@ -1,6 +1,9 @@
-.next-bttn-app {
+
+.row-bttn-app {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-evenly;
     align-items: center;
-    margin-left: 55rem;
+    margin-top: 2rem;
 }

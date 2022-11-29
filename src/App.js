@@ -33,7 +33,18 @@ function App() {
     axios.get(url).then((res) => {
       setPokeImg(res.data.sprites.front_default);
     });
+    setPokemons(pokemons.filter((poke) => poke.name !== pokemon.name));
     console.log(pokemon); // testing
+    console.log(pokemons); // testing
+  };
+
+  const reset = () => {
+    setScore(0);
+  };
+
+  const hint = () => {
+    let firstLetter = pokeName[0];
+    console.log(firstLetter);
   };
 
   return (
@@ -48,8 +59,11 @@ function App() {
         isCorrect={isCorrect}
       />
       <Score score={score} />
-      <div className="next-bttn-app">
-        <Button display={"Next"} clicked={getPokemon} />
+      <div className="row-bttn-app">
+        <Button display={"Reset"} clicked={reset} />
+        <Button display={"Skip"} clicked={getPokemon} isCorrect={isCorrect} />
+        <Button display={"Hint"} clicked={hint} />
+        <Button display={"Next"} clicked={getPokemon} isCorrect={!isCorrect} />
       </div>
     </div>
   );
