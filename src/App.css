@@ -1,7 +1,6 @@
-.score-container {
+.next-bttn-app {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    font-size: 15px;
+    margin-left: 55rem;
 }

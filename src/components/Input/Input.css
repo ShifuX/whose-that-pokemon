@@ -2,10 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3.5rem;
 }
 
 .pokemon-input {
     margin-left: 1rem;
     margin-right: 1rem;
+    height: 2.3rem;
+    width: 20rem;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.lbl {
+    font-size: 25px;
 }

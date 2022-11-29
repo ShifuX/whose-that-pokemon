@@ -1,5 +1,7 @@
 .bttn {
     border-radius: 50px;
-    height: 2rem;
-    width: 5rem;
+    height: 2.3rem;
+    width: 6rem;
+    background-color: #ffcb05;
+    border-style: none;
 }

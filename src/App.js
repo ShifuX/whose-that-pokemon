@@ -1,22 +1,24 @@
 import { Header, Card, Input, Score, Button } from "./components";
 import { useEffect, useState } from "react";
 import headerLogo from "./Assets/pokeLogo.jpg";
+import "./App.css";
 import axios from "axios";
 
 function App() {
-  const pokemons = [];
+  const [pokemons, setPokemons] = useState([]);
   const [pokeName, setPokeName] = useState("");
   const [pokeImg, setPokeImg] = useState("");
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
 
   useEffect(() => {
+    const pokemon = [];
     axios.get("https://pokeapi.co/api/v2/pokemon/?limit=900").then((res) => {
       console.log(res.data); // testing
       for (let e of res.data.results) {
-        pokemons.push({ name: e.name, url: e.url });
+        pokemon.push({ name: e.name, url: e.url });
       }
-      console.log(pokemons); // testing
+      setPokemons(pokemon);
     });
   }, []);
 
@@ -35,7 +37,7 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <Header headerLogo={headerLogo} />
       <Card pokeImg={pokeImg} isCorrect={isCorrect} />
       <Input
@@ -43,10 +45,13 @@ function App() {
         setIsCorrect={setIsCorrect}
         score={score}
         setScore={setScore}
+        isCorrect={isCorrect}
       />
       <Score score={score} />
-      <Button display={"Next"} clicked={getPokemon} />
-    </>
+      <div className="next-bttn-app">
+        <Button display={"Next"} clicked={getPokemon} />
+      </div>
+    </div>
   );
 }
 
