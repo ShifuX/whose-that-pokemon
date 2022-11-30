@@ -19,7 +19,6 @@ function App() {
     axios
       .get("https://pokeapi.co/api/v2/pokemon/?limit=900")
       .then((res) => {
-        console.log(res.data); // testing
         for (let e of res.data.results) {
           pokemonsFetched.push({ name: e.name, url: e.url });
         }
@@ -34,14 +33,12 @@ function App() {
     setIsCorrect(false);
     let rand = Math.floor(Math.random() * pokemons.length - 1);
     let pokemon = pokemons[rand];
-    console.log(pokemons[rand]);
     setPokeName(pokemon.name.toLowerCase());
     let url = pokemon.url;
 
     axios
       .get(url)
       .then((res) => {
-        console.log(res.data);
         setPokemonType(res.data.types[0].type.name);
         setPokeImg(res.data.sprites.front_default);
       })
@@ -49,8 +46,6 @@ function App() {
         console.log("ERROR!!! " + error);
       });
     setPokemons(pokemons.filter((poke) => poke.name !== pokemon.name));
-    console.log(pokemon); // testing
-    console.log(pokemons); // testing
   };
 
   const startGame = () => {
