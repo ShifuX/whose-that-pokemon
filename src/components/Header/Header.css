@@ -10,3 +10,8 @@
     width: 25rem;
     height: 20rem;
 }
+
+.title {
+    text-align: center;
+    margin-top: -85px;
+}

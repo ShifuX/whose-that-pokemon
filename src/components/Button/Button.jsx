@@ -1,8 +1,8 @@
 import './Button.css';
 
-const Button = ({ display, clicked, isCorrect }) => {
+const Button = ({ display, clicked, isCorrect, isShown }) => {
   return (
-    <button className='bttn' onClick={clicked} disabled={isCorrect} >{display}</button>
+    <button className='bttn' onClick={clicked} disabled={(isShown ? isCorrect : true)} >{display}</button>
   )
 }
 
