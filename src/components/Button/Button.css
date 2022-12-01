@@ -5,6 +5,7 @@
     background-color: #ffcb05;
     border:0.20em solid rgba(255,255,255,0);
     transition: 0.5s;
+    text-align: center;
 }
 
 .bttn:hover {
@@ -15,4 +16,12 @@
     flex-direction: row;
     margin-left: 20;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width : 576px) {
+    .bttn {
+        width: 4rem;
+        height: 1.7rem;
+        font-size: 9px;
+    }
 }

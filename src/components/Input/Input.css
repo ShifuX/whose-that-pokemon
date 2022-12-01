@@ -25,3 +25,31 @@
 .lbl {
     font-size: 25px;
 }
+
+@media screen and (max-width : 576px) {
+    .pokemon-input {
+        width: 9rem;
+        height: 1.5rem;
+        margin-left: 0;
+        margin-right: 0.5rem;
+        font-size: 10px;
+    }
+
+    .lbl {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 376px) {
+    .pokemon-input {
+        width: 9rem;
+        height: 1.5rem;
+        margin-left: 0;
+        margin-right: 0.5rem;
+        font-size: 10px;
+    }
+
+    .lbl {
+        font-size: 10px;
+    }
+}

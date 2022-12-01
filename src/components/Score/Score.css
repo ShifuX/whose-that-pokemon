@@ -5,3 +5,9 @@
     margin-top: 2rem;
     font-size: 15px;
 }
+
+@media screen and (max-width : 576px) {
+    .score-container {
+        font-size: 15px;
+    }
+}

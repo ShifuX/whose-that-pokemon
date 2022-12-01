@@ -15,3 +15,19 @@
     text-align: center;
     margin-top: -85px;
 }
+
+@media screen and (max-width : 576px) {
+    .header-logo{
+        margin-top: -55px;
+    }
+
+    .logo-img {
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-top: -40px;
+    }
+}

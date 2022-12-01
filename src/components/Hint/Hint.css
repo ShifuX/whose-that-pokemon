@@ -43,3 +43,12 @@
 .hide-hint {
     display: none;
 }
+
+@media screen and (max-width : 576px) {
+  .modal-content {
+    width: 60%;
+    font-size: 13px;
+    margin-top: 50%;
+    margin-left: 8%;
+  }
+}
