@@ -19,7 +19,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20rem;
     height: 50vh;
     margin-top: -25px;
+}
+
+@media screen and (max-height : 780px) {
+    .card-container {
+        height: 45vh;
+    }
 }
