@@ -10,13 +10,14 @@ The user is able to select the category of pokemon generation they want to play.
 
 # Main page
 
-![image](https://user-images.githubusercontent.com/91515578/206105538-38294a38-a61f-468e-9d34-56f41b817dbd.png)
+![image](https://user-images.githubusercontent.com/91515578/206108202-ee47a887-3ef8-418f-8da0-7cfcfd731d7e.png)
+![image](https://user-images.githubusercontent.com/91515578/206108553-3c070cdf-78fb-4805-87b9-27bdad39aa1a.png)
 
 Once a category is selected the user can start to guess what pokemon is shown. If guessed correct the user's score will increase by 1 and the user can use the Next button to guess another pokemon. If the user can not guess the pokemon a skip button is available that generates a different pokemon.
 
 # Hint
 
-![image](https://user-images.githubusercontent.com/91515578/206106069-acc3ddda-2438-47a2-b4c1-b7e2342c2662.png)
+![image](https://user-images.githubusercontent.com/91515578/206108323-3631563f-c62e-48d7-b7cf-ec991d845f23.png)
 
 The hint button creates an overlay and displays a hint as shown above.
 
